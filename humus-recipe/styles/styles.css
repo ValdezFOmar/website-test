@@ -1,0 +1,29 @@
+html {
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(217, 217, 217);
+    background-color: #202020;
+}
+
+body {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #101010;
+    padding: 0 30px 30px 30px;
+
+    /* this will prevent the broser inserting space above the body */
+    border: 1px solid #101010;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px 0;
+}
+
+li,
+p {
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
