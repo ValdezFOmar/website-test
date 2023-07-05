@@ -20,84 +20,85 @@
   <!--- some comment ._.-->
   <h1>My First Website</h1>
 
-  <h2>Index</h2>
-  <ul>
-    <li><a href="pages/recipe.html">Hummus recipe</a></li>
-    <li><a href="pages/recipe.html#instructions">Hummus Instructions</a></li>
-    <li><a href="#lists_types">HTML lists types</a></li>
-    <li><a href="pages/misc.html">Miscellaneous</a></li>
-    <li><a href="pages/letter.html">Example letter</a></li>
-    <li><a href="pages/multimedia.html">Multimedia</a></li>
-  </ul>
-
-  <a href="https://en.wikipedia.org/wiki/Touhou_Project" target="_blank" title="Touhou wikipedia">
-    <h2>Touhou Project</h2>
-  </a>
-
-  <!-- applying a language for a specific part of the document -->
-  <!-- <p>Japanese example: <span lang="ja">ご飯が熱い。</span></p> -->
-
-  <p>
-    The <em>Touhou Project</em> is a series of 2D vertically-scrolling danmaku shooting
-    games made by Team Shanghai Alice, with seven spinoffs games co-produced with
-    Twilight Frontier.
-  </p>
-
-  <p>
-    <a href="https://en.touhouwiki.net/wiki/Touhou_Wiki" target="_blank" title="Touhou wiki home page">
-      Touhou wiki</a> covers the official Touhou Project games and materials and any
-    fan-made games and media, along with other related games developed by the former
-    members of Amusement Makers or in conjunction with Team Shanghai Alice. Everyone
-    is welcome to read and contribute to it <span class="editor-note">[On the original wiki]</span>.
-    Keep the <strong>policies, copyrights, and editing guidelines</strong> in mind while editing.
-    For starters, check the links next to Articles Needing Attention at the bottom-right of this page.
-    <!-- span is a inline non-semantic element -->
-    <span class="editor-note">[This is a copy-paste]</span>
-  </p>
-
-  <img class="center-img" src="images/reimu.png" alt="Osana Reimu eating" />
-
-  <hr />
-
-  <h2 id="lists_types">Lists</h2>
-
-  <p>
-    Lists lets you format data as a list.<br />
-    Use the &lt;li&gt; tag for the elements of the list.
-  </p>
-
-  <h3>Unordered lists</h3>
-  <ul>
-    <li>No</li>
-    <li>particular</li>
-    <li>order</li>
-  </ul>
-  <h3>Ordered lists</h3>
-  <ol>
-    <li>One</li>
-    <li>Two</li>
-    <li>Three</li>
-  </ol>
-
-  <button>Change user</button>
-
-  <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank" title="Firefox website">
-    <img src="images/firefox.png" alt="Firefox logo" class="firefox" />
-  </a>
-
-  <hr />
-  <!-- Contact details information for the document -->
-  <address>
-    <!-- if the href is left as "mailto:" it opens a new mail without any email address -->
+  <nav>
+    <h2>Index</h2>
     <ul>
-      <li>
-        Email: <a href="mailto:uncorreo@gmail.com" target="_blank">uncorreo@gmail.com</a>
-      </li>
-      <li>
-        Tel: 666-777-6969
-      </li>
+      <li><a href="pages/recipe.html">Hummus recipe</a></li>
+      <li><a href="pages/recipe.html#instructions">Hummus Instructions</a></li>
+      <li><a href="#lists_types">HTML lists types</a></li>
+      <li><a href="pages/misc.html">Miscellaneous</a></li>
+      <li><a href="pages/letter.html">Example letter</a></li>
+      <li><a href="pages/multimedia.html">Multimedia</a></li>
+      <li><a href="pages/tables.html">Tables</a></li>
     </ul>
-  </address>
+  </nav>
+
+  <main>
+    <article>
+      <a href="https://en.wikipedia.org/wiki/Touhou_Project" target="_blank" title="Touhou wikipedia">
+        <h2>Touhou Project</h2>
+      </a>
+      <!-- applying a language for a specific part of the document -->
+      <!-- <p>Japanese example: <span lang="ja">ご飯が熱い。</span></p> -->
+      <p>
+        The <em>Touhou Project</em> is a series of 2D vertically-scrolling danmaku shooting
+        games made by Team Shanghai Alice, with seven spinoffs games co-produced with
+        Twilight Frontier.
+      </p>
+      <p>
+        <a href="https://en.touhouwiki.net/wiki/Touhou_Wiki" target="_blank" title="Touhou wiki home page">
+          Touhou wiki</a> covers the official Touhou Project games and materials and any
+        fan-made games and media, along with other related games developed by the former
+        members of Amusement Makers or in conjunction with Team Shanghai Alice. Everyone
+        is welcome to read and contribute to it <span class="editor-note">[On the original wiki]</span>.
+        Keep the <strong>policies, copyrights, and editing guidelines</strong> in mind while editing.
+        For starters, check the links next to Articles Needing Attention at the bottom-right of this page.
+        <!-- span is a inline non-semantic element -->
+        <span class="editor-note">[This is a copy-paste]</span>
+      </p>
+      <img class="center-img" src="images/reimu.png" alt="Osana Reimu eating" />
+    </article>
+    <hr />
+    <article>
+      <h2 id="lists_types">Lists</h2>
+      <p>
+        Lists lets you format data as a list.<br />
+        Use the &lt;li&gt; tag for the elements of the list.
+      </p>
+      <h3>Unordered lists</h3>
+      <ul>
+        <li>No</li>
+        <li>particular</li>
+        <li>order</li>
+      </ul>
+      <h3>Ordered lists</h3>
+      <ol>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+      </ol>
+    </article>
+    <hr />
+    <button>Change user</button>
+    <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank" title="Firefox website">
+      <img src="images/firefox.png" alt="Firefox logo" class="firefox" />
+    </a>
+  </main>
+
+  <!-- Contact details information for the document -->
+  <footer>
+    <address>
+      <!-- if the href is left as "mailto:" it opens a new mail without any email address -->
+      <ul>
+        <li>
+          Email: <a href="mailto:uncorreo@gmail.com" target="_blank">uncorreo@gmail.com</a>
+        </li>
+        <li>
+          Tel: 666-777-6969
+        </li>
+      </ul>
+    </address>
+  </footer>
 
 </body>
 

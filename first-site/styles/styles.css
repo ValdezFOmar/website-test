@@ -3,7 +3,7 @@ html {
     /* px means "pixels": the base font size is now 10 pixels high */
     /* font-family: "Open Sans", sans-serif; */
     /* font-family: "AniMe Matrix - MB_EN"; */
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Roboto";
     /* this should be the rest of the output you got from Google Fonts */
     color: #D9D9D9;
     background-color: #202020;
@@ -60,6 +60,7 @@ strong {
 
 .inline-code {
     font-family: "Cascadia code" monospace;
+    font-size: 13px;
     background: #000;
     padding: 5px;
     border-radius: 10px;
@@ -94,7 +95,7 @@ button {
     background-color: cadetblue;
     color: #101010;
     font-size: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Roboto";
     border: 0;
     transition-duration: 0.3s;
     margin: 0 auto;
@@ -104,6 +105,10 @@ button {
 
 button:hover {
     background-color: aqua;
+}
+
+footer {
+    background-color: #070707;
 }
 
 .editor-note {
@@ -117,6 +122,47 @@ button:hover {
 
 .p-with-bg {
     background-image: url("../images/firefox.png");
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(50, 50, 50);
+    letter-spacing: 1px;
+}
+
+td,
+th {
+    border: 1px solid rgb(40, 40, 40);
+    padding: 10px 20px;
+}
+
+th {
+    background-color: rgb(65, 65, 65);
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-child(even) td {
+    background-color: rgb(100, 100, 100);
+}
+
+tr:nth-child(odd) td {
+    background-color: rgb(85, 85, 85);
+}
+
+caption {
+    padding: 10px;
+}
+
+tbody {
+    font-size: 95%;
+    font-style: italic;
+}
+
+tfoot {
+    font-weight: bold;
 }
 
 /* p,
