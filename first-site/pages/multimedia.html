@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="../styles/styles.css" rel="stylesheet" />
+
+  <title>Multimedia</title>
+</head>
+
+<body>
+  <header>
+    <h1>Multimedia</h1>
+  </header>
+  <nav><a href="../index.html">&lt;back</a></nav>
+
+  <main>
+    <article>
+      <h2>Images</h2>
+      <p>Embeding images in <abbr title="Hypertext Markup Language">HTML</abbr>.</p>
+
+      <h3>Figure tag</h3>
+      <p>Simple image in a figure tag with a caption.</p>
+      <!-- Proper way of captioning an image -->
+      <figure>
+        <!-- the title property is not recommended, use alt o described the image in a paragraph instead -->
+        <img class="center-img" src="../images/momiji-fumo.png" alt="Momiji fumo plushie from Touhou Project"
+          title="Momiji Fumo">
+        <figcaption>A promotional image of character Momiji's fumo plushie.</figcaption>
+      </figure>
+      <h3>Background images</h3>
+      <p class="p-with-bg">This images dont posses any semantic meaning but are used for decorative pourpuses.</p>
+    </article>
+
+    <hr />
+
+    <article>
+      <h2>Video and audio content</h2>
+
+      <h3>Video</h3>
+      <p>A simple video example.</p>
+      <!-- With the controls property a simple set video controls are added -->
+      <video controls poster="../images/tewi-fumo.jpg" muted>
+        <source src="../videos/rabbit320.mp4" type="video/mp4">
+        <source src="../videos/rabbit320.webm" type="video/webm">
+        <p>
+          Your browser doesnt support HTML video. Here is a <a href="../videos/rabbit320.mp4" target="_blank">link to
+            the video</a>.
+        </p>
+      </video>
+
+      <h3>Audio</h3>
+      <p>Some simple audio example</p>
+    </article>
+
+  </main>
+</body>
+
+</html>

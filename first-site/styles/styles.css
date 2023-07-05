@@ -75,7 +75,7 @@ strong {
     line-height: 1.3;
 }
 
-.touhou-img {
+.center-img {
     display: block;
     margin: 0 auto;
     height: 200px;
@@ -113,6 +113,10 @@ button:hover {
 
 .sender-column {
     text-align: right;
+}
+
+.p-with-bg {
+    background-image: url("../images/firefox.png");
 }
 
 /* p,
