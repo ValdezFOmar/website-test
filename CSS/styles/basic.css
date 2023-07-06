@@ -1,0 +1,65 @@
+/* media queries */
+body {
+    background-color: cadetblue;
+}
+
+@media (min-width: 30em) {
+    body {
+        background-color: pink;
+    }
+}
+
+
+/* Changing the list's bullets */
+li {
+    list-style-type: upper-roman;
+}
+
+.special {
+    color: orange;
+    font-weight: bold;
+}
+
+/* Only target when the 2nd element is nested in the first element */
+li em {
+    color: rebeccapurple;
+}
+
+/* Only target when the 2nd element when it comes directly after the first one */
+h2+p {
+    font-size: 200%;
+}
+
+p span {
+    color: red;
+}
+
+/* Link not visited */
+a:link {
+    color: pink;
+}
+
+/* Link has been visited */
+a:visited {
+    color: green;
+}
+
+/* On hover removes the underline */
+a:hover {
+    font-style: italic;
+    text-decoration: none;
+}
+
+.pink-p {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(330, 80%, 85%);
+    transform: rotate(-0.01turn);
+}
+
+.box {
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    transform: rotate(0.8turn);
+}
