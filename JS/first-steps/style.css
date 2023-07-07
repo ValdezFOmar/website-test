@@ -1,0 +1,46 @@
+html {
+    background-color: hsl(0, 0%, 10%);
+}
+
+body {
+    background-color: hsl(0, 0%, 15%);
+    color: aliceblue;
+    margin: 0px auto;
+    padding: 20px;
+    font-family: "Roboto";
+}
+
+h1 {
+    text-align: center;
+    font-family: initial;
+}
+
+h2 {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    font-family: initial;
+}
+
+#player {
+    font-family: "helvetica neue", helvetica, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid rgb(27, 174, 228);
+    background: rgb(64, 64, 204);
+    box-shadow: 1px 1px 2px rgb(0 0 200 / 0.4);
+    border-radius: 10px;
+    padding: 3px 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.form input[type="number"] {
+    width: 200px;
+}
+
+.lastResult {
+    color: white;
+    padding: 3px;
+}
