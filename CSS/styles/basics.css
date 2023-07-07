@@ -8,7 +8,7 @@ body {
     color: aliceblue;
     font-family: "Roboto";
     font-size: 18px;
-    background-color: hsl(0, 0, 15);
+    background-color: hsl(0, 0%, 10%);
 }
 
 main {
@@ -29,18 +29,12 @@ h2 {
 p {
     margin: 10px 0px;
     font-size: 20px;
-    padding-left: 30px;
-}
-
-/* only targets p elements that are direct children of an article */
-article>p::first-line {
-    color: pink;
 }
 
 /* Makes the first child of a descendant article element bold */
-article *:first-child {
+/* article *:first-child {
     font-weight: bold;
-}
+} */
 
 a:link,
 a:visited {
@@ -59,9 +53,44 @@ a[target="_blank"] {
     color: cornflowerblue;
 }
 
+a[target="_blank"]::after {
+    color: aliceblue;
+    text-decoration: none;
+    content: "↗";
+}
+
+.article-content {
+    margin: 5px;
+}
+
+.article-content>p {
+    padding-left: 30px;
+}
+
+/* first paragraph is a bit bigger */
+.article-content>p:first-child {
+    font-size: 120%;
+}
+
+.article-content>p:first-child::first-line {
+    font-weight: bold;
+}
+
+.article-content>p::first-line {
+    color: pink;
+}
+
 .notebox {
+    margin: 10px;
     border: 4px solid #666;
     padding: .5em;
+}
+
+.notebox::before {
+    font-style: italic;
+    font-weight: bold;
+    color: skyblue;
+    content: "Note: ";
 }
 
 .notebox.warning {
