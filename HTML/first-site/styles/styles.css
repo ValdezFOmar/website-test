@@ -17,8 +17,7 @@ body {
 }
 
 main {
-    margin: 1em 0;
-    padding: 0 20px 20px 20px;
+    margin: 10px 20px;
 }
 
 h1 {
@@ -81,10 +80,15 @@ strong {
 }
 
 .center-img {
+    box-sizing: border-box;
     display: block;
-    margin: 0 auto;
+    margin: 10px auto;
     height: 200px;
-    padding: 10px;
+}
+
+.center-img:hover {
+    border-radius: 5px;
+    border: 4px aqua solid;
 }
 
 .firefox {
