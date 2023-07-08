@@ -1,0 +1,62 @@
+/*-----------------------*/
+/* This snippet will change elements to be a border box */
+/* https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+/*-----------------------*/
+
+body {
+    margin: 0;
+    color: aliceblue;
+    font-family: "Roboto";
+    font-size: 20px;
+    background-color: hsl(0, 0%, 10%);
+}
+
+main {
+    margin: 20px;
+}
+
+h1 {
+    margin: 10px;
+    font-size: 50px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+}
+
+nav {
+    background-color: hsl(0, 0%, 5%);
+}
+
+.navbar {
+    width: auto;
+    height: auto;
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar>li {
+    display: inline-block;
+    margin: 3px 5px;
+    padding: .5em .8em;
+}
+
+.navbar>li:hover {
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 7px;
+}

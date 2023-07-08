@@ -10,11 +10,15 @@ html {
 }
 
 body {
-    width: 800px;
+    width: 850px;
     margin: 0 auto;
     background-color: #101010;
-    padding: 0 20px 20px 20px;
     border: 5px solid black;
+}
+
+main {
+    margin: 1em 0;
+    padding: 0 20px 20px 20px;
 }
 
 h1 {
@@ -163,6 +167,40 @@ tbody {
 
 tfoot {
     font-weight: bold;
+}
+
+nav {
+    border-top: #202020 2px solid;
+    border-bottom: #202020 2px solid;
+    background-color: #070707;
+}
+
+.navbar-links {
+    display: flex;
+    column-gap: 0.5em;
+    flex-grow: 1;
+    list-style: none;
+    padding: 0.5em;
+    margin: 0;
+}
+
+.navbar-links a {
+    display: inline-block;
+    padding: 0.5em;
+    color: #D9D9D9;
+    text-decoration: none;
+}
+
+.navbar-links a:hover {
+    border-radius: 8px;
+    background-color: #202020;
+}
+
+.list-address {
+    font-style: initial;
+    margin: 0;
+    list-style: none;
+    padding: 1em 1.5em;
 }
 
 /* p,
