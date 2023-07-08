@@ -10,6 +10,7 @@ html {
 *::after {
     box-sizing: inherit;
 }
+
 /*-----------------------*/
 
 body {
@@ -43,20 +44,63 @@ nav {
 }
 
 .navbar {
-    width: auto;
-    height: auto;
     display: flex;
-    padding: 0;
+    padding: 0.2em 0.5em;
     list-style: none;
+    border-top: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
 }
 
-.navbar>li {
+.navbar a {
+    text-decoration: none;
+    color: aliceblue;
     display: inline-block;
     margin: 3px 5px;
     padding: .5em .8em;
 }
 
-.navbar>li:hover {
+.navbar a:hover {
     background-color: hsl(0, 0%, 20%);
     border-radius: 7px;
+}
+
+.box {
+    border: 0.2em solid aliceblue;
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    height: 150px;
+}
+
+.box.balloons {
+    border: .4em double;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url(../images/balloons.jpg);
+}
+
+/* Produce the same background image */
+.box.star {
+    border-style: dotted;
+    background-position: top 10px left 10px;
+    background-color: cadetblue;
+    background-image: url(../images/star.png);
+    background-repeat: repeat-x;
+}
+
+.box.new-star {
+    border-radius: 1.5em;
+    border-top-right-radius: 3em;
+    border-bottom-left-radius: 3em;
+    background: url(../images/star.png) top 10px left 10px repeat-x cadetblue;
+}
+/*-----------------------------------*/
+
+.box.gradient {
+    border: .3em dashed;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(10deg, rgba(131, 58, 180, 1) 7%,
+            rgba(253, 29, 29, 1) 58%, rgba(252, 176, 69, 1) 90%);
 }

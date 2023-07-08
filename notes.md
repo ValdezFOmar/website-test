@@ -1,6 +1,6 @@
 # CSS
 - Building Blocks
-    - Background and Borders
+    - Handling different text directions
 
 # Javascript
 - Building Blocks
