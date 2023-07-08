@@ -3,8 +3,7 @@
     - Cascade Layers
 
 # Javascript
-- First steps
-    - What went wrong? Troubleshooting JavaScript
+- Building Blocks
 
 
 # Types of combinators:

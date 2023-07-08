@@ -21,6 +21,19 @@ h2 {
     font-family: initial;
 }
 
+label {
+    font-weight: bold;
+}
+
+div {
+    padding-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    width: 150px;
+}
+
 #player {
     font-family: "helvetica neue", helvetica, sans-serif;
     letter-spacing: 1px;
@@ -35,6 +48,23 @@ h2 {
     cursor: pointer;
 }
 
+#anagramResult {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0px 10px;
+    padding: 10px;
+    border: 7px solid aliceblue;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.story {
+    background: #ffc125;
+    color: #5e2612;
+    padding: 10px;
+    visibility: hidden;
+}
+
 
 .form input[type="number"] {
     width: 200px;
@@ -43,4 +73,9 @@ h2 {
 .lastResult {
     color: white;
     padding: 3px;
+}
+
+.test {
+    color: olivedrab;
+    color: sienna;
 }

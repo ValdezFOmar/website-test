@@ -11,6 +11,9 @@
 <body>
   <script src="js/player.js" defer></script>
   <script src="js/guess.js" defer></script>
+  <script src="js/story.js" defer></script>
+  <script src="js/anagram.js" defer></script>
+
   <header>
     <h1>Javascript Basics</h1>
   </header>
@@ -38,6 +41,39 @@
         <p class="lastResult"></p>
         <p class="lowOrHi"></p>
       </div>
+    </article>
+  
+    <article>
+      <h2>Anagrams</h2>
+      <p>Write 2 words down and I'll tell you if they are anagrams!</p>
+      <div>
+        <label for="firstWord">Word 1:</label>
+        <input id="firstWord" type="text" placeholder="Alan"/>
+      </div>
+      <div>
+        <label for="secondWord">Word 2:</label>
+        <input id="secondWord" type="text" placeholder="Lana"/>
+      </div>
+      <div>
+        <button id="checkAnagram">Check!</button>
+      </div>
+      <p id="anagramResult">Waiting for a result</p>
+    </article>
+
+    <article>
+      <h2>Silly Stories</h2>
+      <div>
+        <label for="customname">Enter custom name:</label>
+        <input id="customname" type="text" placeholder="" />
+      </div>
+      <div>
+        <label for="us">US</label><input id="us" type="radio" name="ukus" value="us" checked />
+        <label for="uk">UK</label><input id="uk" type="radio" name="ukus" value="uk" />
+      </div>
+      <div>
+        <button class="randomize">Generate random story</button>
+      </div>
+      <p class="story"></p>
     </article>
   </main>
 </body>
