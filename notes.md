@@ -1,6 +1,6 @@
 # CSS
 - Building Blocks
-    - Handling different text directions
+    - Images, media, and form elements
 
 # Javascript
 - Building Blocks
@@ -48,6 +48,12 @@ Same as `em` but this time it's the value of the root element (highest in the hi
 - where `n` is a number
 
 Porcentage relative to the parent value (ex. a width of `50%` is **half** the width of its parent width).
+
+
+    vw and vh
+- Viewport width and viewport height
+
+Units relative to the size of the available viewport. `1vh` is `1%` of the viewport height. Sizing things according to the viewport can be useful in your designs. For example, if you want a full-page hero section to show before the rest of your content, making that part of your page 100vh high will push the rest of the content below the viewport, meaning that it will only appear once the document is scrolled.
 
 # Functions
 
