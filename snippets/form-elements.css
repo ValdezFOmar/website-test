@@ -1,0 +1,56 @@
+/* 
+In some browsers, form elements do not inherit font styling by default. 
+Therefore, if you want to be sure that your form fields use the font 
+defined on the body, or on a parent element, you should add this rule 
+to your CSS.
+*/
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+
+/* 
+For consistency, it is a good idea to set margins and padding to 0 
+on all elements, then add these back in when styling particular controls.
+*/
+button,
+input,
+select,
+textarea {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* 
+In addition to the rules mentioned above, you should also 
+set overflow: auto on <textarea>s to stop IE showing a 
+scrollbar when there is no need for one:
+*/
+textarea {
+    overflow: auto;
+}
+
+/* 
+All together
+*/
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+textarea {
+    overflow: auto;
+}

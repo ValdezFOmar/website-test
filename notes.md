@@ -1,4 +1,5 @@
 # CSS
+> Checkout [Normalize.css](https://necolas.github.io/normalize.css/)
 - Building Blocks
     - Images, media, and form elements
 
