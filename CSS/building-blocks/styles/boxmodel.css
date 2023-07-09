@@ -94,7 +94,7 @@ nav {
     border-radius: 1.5em;
     border-top-right-radius: 3em;
     border-bottom-left-radius: 3em;
-    background: url(../images/star.png) top 10px left 10px repeat-x cadetblue;
+    background: url(../images/star.png) top 10px left 10px repeat cadetblue;
 }
 /*-----------------------------------*/
 
@@ -103,4 +103,21 @@ nav {
     background: rgb(131, 58, 180);
     background: linear-gradient(10deg, rgba(131, 58, 180, 1) 7%,
             rgba(253, 29, 29, 1) 58%, rgba(252, 176, 69, 1) 90%);
+}
+
+.vertical {
+    border-radius: 10px;
+    background-color: cadetblue;
+    padding: 5px;
+    writing-mode: vertical-rl;
+}
+
+.box.overflow {
+    padding: .2em;
+    overflow: hidden;
+}
+
+.box.overflow-scroll {
+    padding: .2em;
+    overflow: scroll;
 }
