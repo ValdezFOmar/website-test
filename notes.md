@@ -1,7 +1,10 @@
 # CSS
-> Checkout [Normalize.css](https://necolas.github.io/normalize.css/)
 - Building Blocks
-    - Images, media, and form elements
+    - Fundamental CSS comprehension
+
+> Checkout 
+> - [Normalize.css](https://necolas.github.io/normalize.css/)
+> - [Organizing CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing)
 
 # Javascript
 - Building Blocks
