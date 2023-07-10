@@ -5,8 +5,7 @@
 - Building Blocks
 
 # CSS
-- Building Blocks
-    - Creating fancy letterheaded paper
+- CSS styling text
 
 > Checkout 
 > - [Normalize.css](https://necolas.github.io/normalize.css/)
