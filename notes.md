@@ -1,3 +1,6 @@
+# Firefox tricks
+- Color picker: `Menu > More Tools > Eyedropper`
+
 # Javascript
 - Building Blocks
 
