@@ -1,0 +1,86 @@
+html {
+  background-color: #181a1b;
+  color: #ddd;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+}
+
+body{
+  font-size: 1.6rem;
+}
+
+main {
+  padding: 0rem 2rem;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+p {
+  line-height: 1.4;
+}
+
+/* Links styling */
+a {
+  outline: none;
+}
+
+a:link {
+  color: #be8fff;
+}
+
+a:visited {
+  color: #a5c300;
+}
+
+a:focus {
+  text-decoration: none;
+  border: 1px #ddd solid;
+  border-radius: 5px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  background: #6900ff;
+  color: #cdfeaa;
+}
+
+a[href^="http"] {
+  background: url(../images/icons8-external-link.svg) no-repeat 100% 0;
+  background-size: 16px 16px;
+  padding-right: 19px;
+}
+
+.container {
+  display: flex;
+  gap: 0.625%;
+}
+
+.container a {
+  flex: 1;
+  text-decoration: none;
+  outline: none;
+  text-align: center;
+  line-height: 3;
+  color: black;
+}
+
+.container a:link,
+.container a:visited,
+.container a:focus {
+  background: palegoldenrod;
+  color: black;
+}
+
+.container a:hover {
+  background: orange;
+}
+
+.container a:active {
+  background: darkred;
+  color: white;
+}
