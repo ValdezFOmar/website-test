@@ -1,0 +1,48 @@
+@font-face {
+  font-family: '3dumbregular';
+  src: url('../fonts/web-font-kit/3dumb-webfont.woff2') format('woff2'),
+    url('../fonts/web-font-kit/3dumb-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'aileronregular';
+  src: url('../fonts/web-font-kit/aileron-regular-webfont.woff2') format('woff2'),
+    url('../fonts/web-font-kit/aileron-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* General setup */
+
+html {
+  font-size: 10px;
+  margin: 0;
+  font-family: 'aileronregular', sans-serif;
+}
+
+body {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Typography */
+h1 {
+  font-family: '3dumbregular';
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-family: 'Caprasimo', cursive;
+  font-size: 2.4rem;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  word-spacing: 0.6rem;
+}
