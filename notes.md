@@ -8,37 +8,44 @@
 
 ## CSS
 - CSS layout
-    - Introduction to CSS layout
+    - Grids
 
 > Checkout 
 > - [Normalize.css](https://necolas.github.io/normalize.css/)
 > - [Organizing CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing)
 
-
 ### Types of combinators:
 
 #### Descendant combinator 
 
-    parent child
+```css    
+.parent .child
+```
 
 All the children **descendant** of the parent (even when there are other elements between the chain) have this rule apply.
 
 #### Child Combinator
 
-    parent > child
+```css
+.parent > .child
+```
 
 The style rule is only apply if the child is a **direct child** of the parent (there are no elements between them).
 
 
 #### Adjacent sibling
 
-    sibling + sibling
+```css
+.sibling + .sibling
+```
 
 Applys the rules to the second sibling only when it's the **next sibling** of the first one.
 
 #### General sibling
 
-    sibling ~ sibling
+```css
+.sibling ~ .sibling
+```
 
 Applys the rules to the second sibling when it comes **anywhere** after the first one.
 
@@ -101,4 +108,28 @@ So the line height is `3em` / `2em` = `1.5em`, resulting in:
     font-size: 2em;
     line-height: 1.5em;
 }
-```  
+```
+
+### Flexbox
+
+To make the items of container take as much space as posible without overflowing (droping to
+a new line instead), you could use the following CSS:
+
+```css
+/* For the container */
+.container {
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* For the children */
+.child {
+    flex: 1 auto;
+    /* other rules... */
+}
+```
+
+The `auto` keyword here is what is making the flex items expand as much as posible in the main cross direction
