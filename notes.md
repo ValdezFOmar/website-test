@@ -7,8 +7,8 @@
 - Building Blocks
 
 ## CSS
-- CSS styling text
-    - Typesetting a community school homepage
+- CSS layout
+    - Introduction to CSS layout
 
 > Checkout 
 > - [Normalize.css](https://necolas.github.io/normalize.css/)
