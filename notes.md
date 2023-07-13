@@ -8,7 +8,7 @@
 
 ## CSS
 - CSS layout
-    - Grids
+    - Responsive design
 
 > Checkout 
 > - [Normalize.css](https://necolas.github.io/normalize.css/)

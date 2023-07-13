@@ -1,0 +1,40 @@
+html {
+  font-size: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: hsl(0, 0%, 10%);
+  color: hsl(0, 0%, 85%);
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  height: 90vh;
+}
+
+h1 {
+  margin: 0;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.note {
+  margin: 0.5rem 0 0 0;
+  font-size: 1rem;
+  color: hsl(0, 0%, 40%);
+}
+
+.container {
+  height: calc(100% - 4rem);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container>div {
+  text-align: center;
+  border: 0.2rem solid hsl(200, 80%, 50%);
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 2rem;
+}
