@@ -1,0 +1,10 @@
+/* 
+This ensures that the media displayed is
+never larger than its container
+*/
+
+img,
+picture,
+video {
+  max-width: 100%;
+}
