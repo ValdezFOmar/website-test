@@ -18,7 +18,7 @@ img {
 }
 
 .grid {
-  margin: 0 auto;
+  margin: 1rem auto;
   padding: 0 20px;
   max-width: 980px;
 }
@@ -62,6 +62,10 @@ html {
   box-sizing: inherit;
 }
 
+h1 {
+  margin-top: 0;
+}
+
 nav ul {
   display: flex;
   flex-flow: row wrap;
@@ -91,8 +95,9 @@ nav a:active {
 
 .grid {
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  column-gap: 1rem;
+  /* grid-template-columns: 3fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
 }
 
 .photos {
@@ -100,3 +105,9 @@ nav a:active {
   grid-template-columns: repeat(2, 1fr);
   gap: 1px;
 }
+
+/* @media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 100%;
+  }
+} */
