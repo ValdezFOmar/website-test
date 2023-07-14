@@ -7,8 +7,7 @@
 - Building Blocks
 
 ## CSS
-- CSS layout
-    - Responsive design
+- Finished
 
 > Checkout 
 > - [Normalize.css](https://necolas.github.io/normalize.css/)

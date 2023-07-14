@@ -1,1 +1,3 @@
-Just a simple repo for testing web development
+# Wev Dev Testing
+
+Just a simple repo for testing web development.
