@@ -3,6 +3,24 @@
 > Firefox tricks
 > - Color picker: `Menu > More Tools > Eyedropper`
 
+## Locally hosted website
+
+1. Find your local IP address:
+```bash
+ip a | grep "inet " | grep -v "127.0.0.1"
+```
+
+2. Go to the folder with your site files and run a simple python server:
+```bash
+# Port by default: 8000
+python3 -m http.server "port-number"
+```
+
+3. In your device, open a browser and type the following in the address bar:
+```plaintext
+[ip_address]:[port]
+```
+
 ## Javascript
 - Building Blocks
 
