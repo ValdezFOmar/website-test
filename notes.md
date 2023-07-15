@@ -6,8 +6,15 @@
 ## Locally hosted website
 
 1. Find your local IP address:
+
+Linux
 ```bash
 ip a | grep "inet " | grep -v "127.0.0.1"
+```
+
+Windows
+```ps1
+ipconfig | grep "IPv4"
 ```
 
 2. Go to the folder with your site files and run a simple python server:
@@ -22,7 +29,7 @@ python3 -m http.server "port-number"
 ```
 
 ## Javascript
-- Building Blocks
+- JavaScript object basics
 
 ## CSS
 - Finished
