@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Object-oriented JavaScript example</title>
+</head>
+
+<body>
+  <p>
+    This example requires you to enter commands in your browser's JavaScript console (see <a
+      href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools">What are
+      browser developer tools</a> for more information).
+  </p>
+
+  <script>
+    const person = {
+      // name: ["Bob", "Smith"],}
+      name: {
+        first: "Bobo",
+        last: "Smith"
+      },
+      age: 32,
+      bio() {
+        console.log(`${this.name[0]} ${this.name[1]} is ${this.age} years old.`)
+      },
+      introducedSelf() {
+        console.log(`Hi! I'm ${this.name[0]}.`)
+      }
+    }
+
+    // simple function to create an object
+    function createPerson(name) {
+      const obj = {}
+      obj.name = name
+      obj.introducedSelf = function () {
+        console.log(`Hi! I'm ${this.name[0]}.`)
+      }
+      return obj
+    }
+    myPerson = createPerson("Daniel")
+
+    /* Proper constructor
+      - Similar to a Class
+      - Uses the keyword 'new' to create the object
+      - Starts with a capital letter
+      - Automtically binds 'this' to the object
+      - Automtically returns the object
+    */
+    function Person(name) {
+      this.name = name
+      this.introducedSelf = function () {
+        console.log(`Hi! I'm ${this.name}.`)
+      }
+    }
+  </script>
+</body>
+
+</html>
