@@ -26,6 +26,41 @@ function randomHSL() {
 
 // Exercise code here
 
+class ColorHSL {
+  constructor(hue, saturation, lightness) {
+    this.hue = hue
+    this.saturation = saturation
+    this.lightness = lightness
+
+    this.upperLimit = 80
+    this.lowerLimit = 20
+    this.isGoingUp = true
+  }
+
+  changeLightness() {
+    const step = 10
+    if (!this.isGoingUp) {
+      if (!(this.lightness > this.lowerLimit)) {
+        this.lightness += step
+        this.isGoingUp = true
+        return
+      }
+      this.lightness -= step
+      return
+    }
+    if (!(this.lightness < this.upperLimit)) {
+      this.lightness -= step
+      this.isGoingUp = false
+      return
+    }
+    this.lightness += step
+  }
+
+  toString() {
+    return `hsl(${this.hue}, ${this.saturation}%, ${this.lightness}%)`
+  }
+}
+
 class Shape {
   constructor(x, y, velX, velY) {
     this.x = x
@@ -45,7 +80,7 @@ class Ball extends Shape {
 
   draw() {
     ctx.beginPath()
-    ctx.fillStyle = this.color
+    ctx.fillStyle = this.color.toString()
     ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI)
     ctx.fill()
   }
@@ -79,7 +114,8 @@ class Ball extends Shape {
         const distance = Math.sqrt(dx * dx + dy * dy)
 
         if (distance < this.size + ball.size) {
-          ball.color = this.color = randomHSL()
+          this.color.changeLightness()
+          ball.color.changeLightness()
         }
       }
     }
@@ -107,7 +143,7 @@ class EvilCircle extends Shape {
           this.y += this.velY;
           break;
       }
-    });    
+    });
   }
 
   draw() {
@@ -128,7 +164,7 @@ class EvilCircle extends Shape {
     }
 
     if ((this.y + this.size) >= height) {
-      this.y -= this.size 
+      this.y -= this.size
     }
 
     if ((this.y - this.size) <= 0) {
@@ -166,7 +202,7 @@ while (balls.length < numberBalls) {
     random(0 + size, height - size),
     random(-7, 7),
     random(-7, 7),
-    randomHSL(),
+    new ColorHSL(random(150, 330), 60, 50),
     size
   )
 
