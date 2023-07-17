@@ -30,6 +30,7 @@ python3 -m http.server "port-number"
 
 ## Javascript
 - JavaScript object basics
+    - Animating the ball
 
 ## CSS
 - Finished
