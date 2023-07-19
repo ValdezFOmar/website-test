@@ -177,6 +177,8 @@ nav {
     border-top: #202020 2px solid;
     border-bottom: #202020 2px solid;
     background-color: #070707;
+    position: sticky;
+    top: 0;
 }
 
 .navbar-links {
