@@ -64,7 +64,7 @@ The style rule is only apply if the child is a **direct child** of the parent (t
 .sibling + .sibling
 ```
 
-Applys the rules to the second sibling only when it's the **next sibling** of the first one.
+Applies the rules to the second sibling only when it's the **next sibling** of the first one.
 
 #### General sibling
 
@@ -72,13 +72,13 @@ Applys the rules to the second sibling only when it's the **next sibling** of th
 .sibling ~ .sibling
 ```
 
-Applys the rules to the second sibling when it comes **anywhere** after the first one.
+Applies the rules to the second sibling when it comes **anywhere** after the first one.
 
 ### Values and units
 
     em
 
-Relative value of the parent element. For fonts it's the relative value of the parents font, the same applies to width.
+Relative value of the parent element. For fonts, it's the relative value of the parents font, the same applies to width.
 
     rem
 
@@ -88,7 +88,7 @@ Same as `em` but this time it's the value of the root element (highest in the hi
 
 - where `n` is a number
 
-Porcentage relative to the parent value (ex. a width of `50%` is **half** the width of its parent width).
+Percentage relative to the parent value (ex. a width of `50%` is **half** the width of its parent width).
 
 
     vw and vh
@@ -100,7 +100,7 @@ Units relative to the size of the available viewport. `1vh` is `1%` of the viewp
 
     calc()
 
-Will make a simple calculation at runtime when its not posible to determined it beforehand, ex.
+Will make a simple calculation at runtime when it's not possible to determined it beforehand, ex.
 
 ```css
 .box {
@@ -137,7 +137,7 @@ So the line height is `3em` / `2em` = `1.5em`, resulting in:
 
 ### Flexbox
 
-To make the items of container take as much space as posible without overflowing (droping to
+To make the items of container take as much space as possible without overflowing (dropping to
 a new line instead), you could use the following CSS:
 
 ```css
@@ -157,4 +157,4 @@ a new line instead), you could use the following CSS:
 }
 ```
 
-The `auto` keyword here is what is making the flex items expand as much as posible in the main cross direction
+The `auto` keyword here is what is making the flex items expand as much as possible in the main cross direction
