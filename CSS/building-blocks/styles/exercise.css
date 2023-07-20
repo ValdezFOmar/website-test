@@ -65,7 +65,7 @@ html {
 
 /*NOTE
 To find the appropriate line-height so the text inside an element (h1, h2, p, ...)
-divide the height of the container by the font size, for example::after
+divide the height of the container by the font size, for example
   container height: 3em
   text font-size: 2em
 so the line height is 3em/2em = 1em
