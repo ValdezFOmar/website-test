@@ -29,8 +29,7 @@ python3 -m http.server "port-number"
 ```
 
 ## Javascript
-- Asynchronous JS
-    - Sequencing animations
+- Forms
 
 ## CSS
 - Finished
