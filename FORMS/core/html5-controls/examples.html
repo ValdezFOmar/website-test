@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>HTML5 input types</title>
+</head>
+<body>
+<script src="main.js" defer></script>
+
+<main>
+  <h1>HTML5 input types</h1>
+  <article>
+    <section>
+      <h2>Email address field</h2>
+      <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+      </form>
+    </section>
+
+    <section>
+      <h2>Search field</h2>
+      <form>
+        <label for="search">Type to search: </label>
+        <input type="search" id="search" name="search">
+      </form>
+    </section>
+
+    <section>
+      <h2>Phone number field</h2>
+      <form>
+        <label for="telephone">Telephone: </label>
+        <input type="tel" id="telephone" name="telephone">
+      </form>
+    </section>
+
+    <section>
+      <h2>URL field</h2>
+      <form>
+        <label for="url-field">URL: </label>
+        <input type="url" name="url" id="url-field">
+      </form>
+    </section>
+
+    <section>
+      <h2>Numeric input</h2>
+      <form>
+        <label for="age">Age: </label>
+        <input type="number" name="age" id="age" min="0" max="100" step="2">
+      </form>
+    </section>
+
+    <section>
+      <h2>Slider Control</h2>
+      <form>
+        <label for="price">Choose a maximum house price</label>
+        <input type="range"
+               name="price"
+               id="price"
+               min="50000"
+               max="500000"
+               step="100"
+               value="250000"/>
+        <!-- Some javascript is required for displaying the output -->
+        <output class="price-output" for="price"></output>
+      </form>
+    </section>
+  </article>
+</main>
+
+</body>
+</html>
