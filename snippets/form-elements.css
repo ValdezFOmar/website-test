@@ -9,8 +9,8 @@ button,
 input,
 select,
 textarea {
-    font-family: inherit;
-    font-size: 100%;
+  font-family: inherit;
+  font-size: 100%;
 }
 
 
@@ -22,9 +22,9 @@ button,
 input,
 select,
 textarea {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -34,23 +34,57 @@ set overflow: auto on <textarea>s to stop IE showing a
 scrollbar when there is no need for one:
 */
 textarea {
-    overflow: auto;
+  overflow: auto;
 }
 
-/* 
+/* ||
 All together
 */
 button,
 input,
 select,
 textarea {
-    font-family: inherit;
-    font-size: 100%;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 textarea {
-    overflow: auto;
+  overflow: auto;
+}
+
+
+/* ||
+Different styles are apply to form elements depending on OS defaults.
+To change this, use the following ruleset:
+*/
+input,
+textarea,
+select,
+button {
+  /* The width could be adjusted, it's just to apply a consistent size */
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ||
+Positioning the legend item inside a fieldset
+*/
+
+/* The <fieldset> needs to be positioned too, so that the <legend>
+is positioned relative to it (otherwise the <legend> would be
+positioned relative to the <body>). */
+fieldset {
+  position: relative;
+}
+
+/* Now you can change the position like this */
+legend {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
