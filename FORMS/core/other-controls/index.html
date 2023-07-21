@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Other controls</title>
+</head>
+<body>
+<main>
+  <h1>Other form controls</h1>
+  <article>
+    <section>
+      <h2>Multiline text fields</h2>
+      <form>
+        <label for="multi">Multiline: </label>
+        <textarea name="multiline" id="multi" cols="30" rows="3"></textarea>
+      </form>
+    </section>
+
+    <section>
+      <h2>Drop down controls</h2>
+
+      <h3>Select box</h3>
+      <form>
+        <p>Without optgroup</p>
+        <label for="fruits">Fruits: </label>
+        <select name="fruit-selected" id="fruits">
+          <option>Banana</option>
+          <option selected>Cherry</option>
+          <option>Lemon</option>
+        </select>
+
+        <p>With optgroup</p>
+        <label for="groups">Veggies</label>
+        <select name="groups" id="groups">
+          <optgroup label="fruits">
+            <option value="banana">Big, beautiful yellow banana</option>
+            <option value="cherry">Succulent, juicy cherry</option>
+            <option value="lemon">Sharp, powerful lemon</option>
+          </optgroup>
+          <optgroup label="vegetables">
+            <option>Carrot</option>
+            <option>Eggplant</option>
+            <option>Potato</option>
+          </optgroup>
+        </select>
+      </form>
+
+      <h3>Autocomplete box</h3>
+      <form>
+        <label for="myFruit">What's your favorite fruit?</label>
+        <input type="text" name="myFruit" id="myFruit" list="mySuggestion"/>
+        <datalist id="mySuggestion">
+          <option>Apple</option>
+          <option>Banana</option>
+          <option>Blackberry</option>
+          <option>Blueberry</option>
+          <option>Lemon</option>
+          <option>Lychee</option>
+          <option>Peach</option>
+          <option>Pear</option>
+        </datalist>
+      </form>
+    </section>
+
+    <section>
+      <h2>Meters and progress bars</h2>
+
+      <form>
+        <h3>Meter</h3>
+        <meter min="0" max="100" value="75" low="33" high="66" optimum="100">75</meter>
+
+        <h3>Progress</h3>
+        <progress max="100" value="75">75/100</progress>
+      </form>
+    </section>
+  </article>
+</main>
+</body>
+</html>

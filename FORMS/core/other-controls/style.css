@@ -1,0 +1,27 @@
+:root {
+  font-family: "helvetica neue", helvetica, sans-serif;
+}
+
+body {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0.5em 2em 2em;
+}
+
+h1 {
+  text-align: center;
+}
+
+div {
+  margin: 0.5em;
+}
+
+input {
+  font-family: inherit;
+}
+
+textarea {
+  vertical-align: top;
+  /* This property controls the ability to resize */
+  resize: none;
+}
