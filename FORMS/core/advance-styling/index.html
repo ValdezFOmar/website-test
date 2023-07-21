@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Advance form styling</title>
+</head>
+
+<body>
+
+<main>
+  <header><h1>Advance form styling</h1></header>
+  <article>
+    <section>
+      <h2>Controlling OS-level styling</h2>
+      <div class="two-columns">
+        <form>
+          <fieldset>
+            <legend>Default OS styling</legend>
+            <div>
+              <label for="search-os">search: </label>
+              <input id="search-os" name="search" type="search"/>
+            </div>
+
+            <div>
+              <label for="text-os">text: </label>
+              <input id="text-os" name="text" type="text"/>
+            </div>
+
+            <div>
+              <label for="date-os">date: </label>
+              <input id="date-os" name="date" type="datetime-local"/>
+            </div>
+
+            <div>
+              <label for="radio-os">radio: </label>
+              <input id="radio-os" name="radio" type="radio"/>
+            </div>
+
+            <div>
+              <label for="checkbox-os">checkbox: </label>
+              <input id="checkbox-os" name="checkbox" type="checkbox"/>
+            </div>
+          </fieldset>
+
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+          <div>
+            <button type="button">Button</button>
+          </div>
+        </form>
+
+        <form class="non-os-styling">
+          <fieldset>
+            <legend>Without default OS styling</legend>
+            <div>
+              <label for="search">search: </label>
+              <input id="search" name="search" type="search"/>
+            </div>
+
+            <div>
+              <label for="text">text: </label>
+              <input id="text" name="text" type="text"/>
+            </div>
+
+            <div>
+              <label for="date">date: </label>
+              <input id="date" name="date" type="datetime-local"/>
+            </div>
+
+            <div>
+              <label for="radio">radio: </label>
+              <input id="radio" name="radio" type="radio"/>
+            </div>
+
+            <div>
+              <label for="checkbox">checkbox: </label>
+              <input id="checkbox" name="checkbox" type="checkbox"/>
+            </div>
+          </fieldset>
+
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+          <div>
+            <button type="button">Button</button>
+          </div>
+        </form>
+      </div>
+
+    </section>
+
+    <section>
+      <h3>Search boxes</h3>
+      <p>Get a more consistent look and fix safari restriction issues.</p>
+      <form class="search">
+        <label for="s">Search</label>
+        <input type="search" id="s">
+      </form>
+    </section>
+
+    <section>
+      <h3>Styling checkboxes and radio buttons</h3>
+      <form class="style-check">
+        <fieldset>
+          <legend>Fruit preferences</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="fruit" id="cherry" value="cherry">
+              <label for="cherry">I like cherry</label>
+            </li>
+            <li>
+              <input type="checkbox" name="fruit" id="banana" value="banana" disabled>
+              <label for="banana">I cant like banana</label>
+            </li>
+            <li>
+              <input type="checkbox" name="fruit" id="strawberry" value="strawberry">
+              <label for="strawberry">I like strawberry</label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+    </section>
+
+  </article>
+</main>
+</body>
+</html>
