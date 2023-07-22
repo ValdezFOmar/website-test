@@ -1,0 +1,56 @@
+:root {
+  font-family: 'helvetica neue', helvetica, sans-serif;
+}
+
+body {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0.5em 2em 2em;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* form elements styling*/
+
+input:required {
+  border: 1px solid black;
+}
+
+input:optional {
+  border: 1px solid silver;
+}
+
+input,
+label {
+  display: block;
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+  height: 30px;
+}
+
+fieldset > div {
+  margin-bottom: 20px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+input + span {
+  position: relative;
+}
+
+input:required + span::after {
+  font-size: 0.7rem;
+  position: absolute;
+  content: 'required';
+  color: white;
+  background-color: black;
+  padding: 5px 10px;
+  top: -26px;
+  left: -70px;
+}
