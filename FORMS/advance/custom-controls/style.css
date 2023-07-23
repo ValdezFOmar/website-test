@@ -1,0 +1,44 @@
+:root {
+  font: 10px 'helvetica neue', helvetica, sans-serif;
+  color: hsl(0, 0%, 80%);
+  background-color: hsl(206, 30%, 10%);
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  font-size: 2rem;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  min-height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: hsl(206, 30%, 15%)
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+a:link,
+a:visited {
+  color: hsl(206, 70%, 50%);
+  text-decoration-thickness: 2px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* <==== CSS rules for the custom control ====> */
