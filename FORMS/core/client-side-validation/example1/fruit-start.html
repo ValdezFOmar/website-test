@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width'>
+  <link rel='stylesheet' href='style.css'>
+  <title>Favorite fruit start</title>
+</head>
+
+<body>
+<script src='main.js' defer></script>
+<main>
+
+  <form novalidate class='custom-email-validation'>
+    <div>
+      <label for='mail'>
+        <span>I would like you to provide me with an email address:</span>
+      </label>
+      <input type='email' name='mail' id='mail' required minlength='8'>
+      <span class='error' aria-live='polite'></span>
+    </div>
+    <div>
+      <button>Submit</button>
+    </div>
+  </form>
+
+  <form class='custom-validation'>
+    <div>
+      <label for='choose'>Would you prefer a banana or a cherry?</label>
+      <input id='choose'
+             name='i_like'
+             pattern='[Bb]anana|[Cc]erry'
+             required>
+    </div>
+    <div>
+      <label for='number'>How many would you like?</label>
+      <input type='number'
+             id='number'
+             name='amount'
+             value='1'
+             min='1'
+             max='10'/>
+    </div>
+    <div>
+      <label for='passwd'>Password</label>
+      <input type='password'
+             name='my-password'
+             id='passwd'
+             minlength='4'
+             maxlength='12'
+             required>
+    </div>
+    <div>
+      <button>Submit</button>
+    </div>
+  </form>
+
+</main>
+</body>
+</html>
