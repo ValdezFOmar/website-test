@@ -8,6 +8,8 @@
 </head>
 
 <body>
+<script src='main.js' defer></script>
+
 <main>
   <header>
     <h1>Custom &lt;select&gt; control</h1>
@@ -17,24 +19,30 @@
     using an unordered list (&lt;select&gt;), some CSS styling and javascript.
   </p>
 
-  <p>Left at
-    <a
-      href='https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_build_custom_form_controls#creating_the_look_and_feel_using_css'>CSS
-      styling</a>.
-  </p>
+  <!-- Normal select in case the script of the custom select isn't working -->
+  <div class='no-widget'>
+    <form>
+      <select name='myFruit'>
+        <option>Cherry</option>
+        <option>Lemon</option>
+        <option>Banana</option>
+        <option>Strawberry</option>
+        <option>Apple</option>
+      </select>
 
-  <!-- The custom control  -->
-  <div class='select' tabindex='0'>
-    <span class='value'>Cherry</span>
-    <ul class='opt-list'>
-      <li class='option'>Cherry</li>
-      <li class='option'>Lemon</li>
-      <li class='option'>Banana</li>
-      <li class='option'>Strawberry</li>
-      <li class='option'>Apple</li>
-    </ul>
+      <!-- The custom control  -->
+      <div class='select' tabindex='0' role='listbox'>
+        <span class='value'>Cherry</span>
+        <ul class='opt-list hidden' role='presentation'>
+          <li role='option' class='option'>Cherry</li>
+          <li role='option' class='option'>Lemon</li>
+          <li role='option' class='option'>Banana</li>
+          <li role='option' class='option'>Strawberry</li>
+          <li role='option' class='option'>Apple</li>
+        </ul>
+      </div>
+    </form>
   </div>
-
 </main>
 </body>
 
