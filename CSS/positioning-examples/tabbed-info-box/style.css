@@ -1,0 +1,75 @@
+:root {
+  font-family: Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+h2 {
+  margin: 0 0 1em;
+}
+
+.info-box {
+  width: 450px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.info-box ul {
+  padding: 0;
+  margin-top: 0;
+}
+
+.info-box .info-tab {
+  float: left;
+  list-style: none;
+  width: 150px;
+}
+
+.info-box .info-tab a{
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  line-height: 3;
+  background-color: hsl(0, 0%, 60%);
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+
+.info-box .info-tab a.active {
+  background-color: hsl(0, 0%, 40%);
+}
+
+.info-box .info-tab a:is(:focus, :hover, :active) {
+  outline: none;
+  background-color: hsl(0, 0%, 80%);
+  color: hsl(0, 0%, 0%);
+}
+
+.info-box .panels {
+  height: 352px;
+  position: relative;
+  clear: both;
+}
+
+.info-box article {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 352px;
+  padding: 2em;
+  color: white;
+  background-color: hsl(0, 0%, 40%);
+}
+
+.info-box .active-panel {
+  z-index: 1;
+}
