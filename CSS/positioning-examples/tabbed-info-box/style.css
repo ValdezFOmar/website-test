@@ -11,6 +11,7 @@
 
 body {
   margin: 0;
+  background-color: hsl(0, 0%, 10%);
 }
 
 h2 {
@@ -20,7 +21,9 @@ h2 {
 .info-box {
   width: 450px;
   height: 400px;
-  margin: 0 auto;
+  position: fixed;
+  top: 10px;
+  left: 10px;
 }
 
 .info-box ul {
@@ -72,4 +75,12 @@ h2 {
 
 .info-box .active-panel {
   z-index: 1;
+}
+
+.fake-content {
+  background-color: hsl(0, 0%, 40%);
+  color: white;
+  padding: 2em;
+  height: 2000px;
+  margin-left: 470px;
 }
